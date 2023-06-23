@@ -10,13 +10,15 @@ import SearchProvider from './context/SearchProvider';
 ReactDOM
   .createRoot(document.getElementById('root'))
   .render(
-    <BrowserRouter>
-      <RecipesProvider>
-        <SearchProvider>
-          <App />
-        </SearchProvider>
-      </RecipesProvider>
-    </BrowserRouter>,
+    <React.StrictMode>
+      <BrowserRouter>
+        <RecipesProvider>
+          <SearchProvider>
+            <App />
+          </SearchProvider>
+        </RecipesProvider>
+      </BrowserRouter>
+    </React.StrictMode>,
   );
 
 // If you want your app to work offline and load faster, you can change
